@@ -6,7 +6,7 @@ body {
   background-color: #ffffff;
 }
 
-body > *:not(header, .hero-banner, #about, footer) {
+body > *>* {
   max-width: 1024px;
   margin: 0 auto;
 }
@@ -204,6 +204,7 @@ header nav a:hover, header nav a:active, .portfolio-list a:hover, .portfolio-lis
 #portfolio{
   height: calc(100vh - 60px);
   position: relative;
+  background: url(../img/white-background-with-wavy-lines-accent.webp) center / cover no-repeat;
 }
 
 #portfolio > div{
@@ -216,6 +217,7 @@ header nav a:hover, header nav a:active, .portfolio-list a:hover, .portfolio-lis
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
+  background: url(../img/white-background-with-wavy-lines-accent.webp) center / cover no-repeat;
 }
 
 #portfolio > div >div{
@@ -225,6 +227,9 @@ header nav a:hover, header nav a:active, .portfolio-list a:hover, .portfolio-lis
   align-items: stretch;
 }
 
+#portfolio h2{
+  margin-bottom: 4.8rem;
+}
 #portfolio section{
   width: calc(100% / 3 - 2.4rem);
   background-image: linear-gradient(#E2706D, #661788 130%);
