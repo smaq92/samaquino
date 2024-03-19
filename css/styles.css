@@ -48,6 +48,10 @@ body > *:not(header, .hero-banner, #about, footer) {
 h1, h2{
     font-family: "Montserrat Alternates", sans-serif;
     font-weight: 800;
+    font-size: 4.8rem;
+    line-height: 1;
+    text-align: center;
+    margin-bottom: 2.4rem;
 }
 
 h3{
@@ -56,8 +60,6 @@ h3{
 }
 
 .hero-banner h2{
-  font-size: 4.8rem;
-  line-height: 1;
   text-transform: uppercase;
 }
 
@@ -74,10 +76,6 @@ h3{
 }
 
 /* about me */
-#about h2, #portfolio h2{
-  font-size: 4.8rem;
-  line-height: 1;
-}
 
 #about p{
   font-size: 3.7rem;
@@ -92,6 +90,11 @@ header{
   z-index: 100;
   top: 0;
   background-color: #fff;
+  min-height: 90px;
+}
+
+header nav ul li{
+  padding-top: 13px;
 }
 
 header img {

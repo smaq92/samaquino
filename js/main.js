@@ -8,10 +8,3 @@ btn.addEventListener("mouseover", (event)=>{
 btn.addEventListener("mouseout", (event)=>{
     event.target.src="img/horizontal-logo.png";
 })
-
-
-btn.addEventListener("click", ()=>{
-    location.href="home.html";
-    // event.target.classList.toggle("rotate");
-    // headerNav.classList.toggle("show-nav");
-})
