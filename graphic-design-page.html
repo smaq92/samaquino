@@ -21,8 +21,22 @@
     <div class="flex-container">
       <section class="flex-container">
         <h1 class="sr-only">Sam Aquino</h1>
-        <a href="index.html"><img src="img/horizontal-logo.webp" alt="Sam Aquino Logo"></a>
+        <a href="index.html" title="Return to Home"><img src="img/horizontal-logo.webp" alt="Sam Aquino Logo" class="logo"></a>
+        <button class="toggle-btn">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 100 80">
+            <rect width="100" height="20" rx="8"></rect>
+            <rect y="30" width="100" height="20" rx="8"></rect>
+            <rect y="60" width="100" height="20" rx="8"></rect>
+          </svg>
+        </button>
       </section>
+      <nav class="home-nav">
+        <ul class="menu flex-container">
+          <li><a href="index.html#about">About</a></li>
+          <li><a href="index.html#portfolio">Portfolio</a></li>
+          <li><a href="#contact" aria-labelledby="contact">Contact</a></li>
+        </ul>
+      </nav>
     </div>
   </header>
   <section class="portfolio">
@@ -46,20 +60,21 @@
       <div class="portfolio-item"><img src="img/graphic-design/one-sheet-layout.jpg" alt=""></div>
     </div>
   </section>
-<footer>
-  <nav>
-    <ul id="contact">
-      <li><a href="https://www.linkedin.com/in/sheilaaquino92/" target="parent"><img src="img/linkedin-icon.png"
-            alt="Links to my linkedin profile"></a></li>
-      <li><a href="https://github.com/smaq92" target="parent"><img src="img/github.png"
-              alt="Links to my github profile"></a></li>
-      <li><a href="mailto:sheila.sam.aquino@gmail.com" target="parent"><img src="img/mail-icon.png"
-            alt="Links to my email "></a></li>
-      <li><a href="tel:+17806952019" target="parent"><img src="img/phone-icon.png" alt="Links to my phone number"></a>
-      </li>
-    </ul>
-  </nav>
-</footer>
+  <footer>
+    <nav>
+      <ul id="contact">
+        <li><a href="https://www.linkedin.com/in/sheilaaquino92/" target="parent"><img src="img/linkedin-icon.png"
+              alt="Links to my linkedin profile"></a></li>
+        <li><a href="https://github.com/smaq92" target="parent"><img src="img/github.png"
+                alt="Links to my github profile"></a></li>
+        <li><a href="mailto:sheila.sam.aquino@gmail.com" target="parent"><img src="img/mail-icon.png"
+              alt="Links to my email "></a></li>
+        <li><a href="tel:+17806952019" target="parent"><img src="img/phone-icon.png" alt="Links to my phone number"></a>
+        </li>
+      </ul>
+    </nav>
+    <p><small>Our website uses cookies to enhance your browsing experience. By continuing to use our site, you consent to the use of cookies.</small></p>
+  </footer>
 </body>
 
 </html>
