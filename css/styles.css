@@ -52,7 +52,7 @@ h2{
     margin-bottom: 2.4rem;
 }
 
-h3{
+h3, .portfolio-list li a p, .portfolio-list li span+p{
   font-size: 2rem;
   line-height: 1.6;
 }
@@ -80,6 +80,7 @@ body>section:nth-of-type(2){
 .portfolio-list > p{
   font-size: 1rem;
 }
+
 /* _______________________________________________________________ */
 
 /* **HEADER** */
@@ -166,13 +167,6 @@ ul.menu li{
   top: 70%;
 }
 
-.hero-banner p+p{
-  position: absolute;
-  left: 50%;
-  bottom: -60%;
-  transform: translateX(-50%);
-}
-
 .hero-banner a, button.close{
   display: inline-block;
   margin: 2.4rem 0 0 0;
@@ -198,6 +192,7 @@ body > section:nth-of-type(2){
 }
 
 body >  section:nth-of-type(2) div{
+  width: 90%;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -231,6 +226,7 @@ body> section:nth-of-type(3) a{
   height: 450px;
   border-radius: 2.4rem 2.4rem 0 0;
   object-fit: cover;
+  object-position: 50% 0;
   -webkit-border-radius: 2.4rem 2.4rem 0 0;
   -moz-border-radius: 2.4rem 2.4rem 0 0;
   -ms-border-radius: 2.4rem 2.4rem 0 0;
@@ -250,12 +246,9 @@ body> section:nth-of-type(3) a{
   padding: 0 0 2.4rem 0;
 }
 
-.portfolio li span{
-  display: block;
-  margin-left: 50%;
-  transform: translateX(-50%);
+.portfolio li.flex-container{
+  justify-content: center;
 }
-
 
 .portfolio-list li p{
   font-size: 1rem;
@@ -309,6 +302,16 @@ footer p{
 
 
 @media screen and (min-width: 520px) {
+  body >  section:nth-of-type(2) h2{
+    font-size: 3.2rem;
+    line-height: calc(48 / 32);
+  }
+
+  body >  section:nth-of-type(2) p{
+    font-size: 2.8rem;
+    line-height: calc(48 / 28);
+  }
+
   /* PORTFOLIO */
   .portfolio-items section, .web-dev-album li{
     max-width: 470px;
@@ -329,10 +332,6 @@ footer p{
   ul.menu, div.flex-container{
     flex-flow: row nowrap;
     transition: all ease 2s;
-    -webkit-transition: all ease 2s  ;
-    -moz-transition: all ease 2s  ;
-    -ms-transition: all ease 2s  ;
-    -o-transition: all ease 2s  ;
 }
    
   div.flex-container > *{
@@ -342,8 +341,17 @@ footer p{
   /* about me */
 
   body> section:nth-of-type(2) div{
-    max-width: 650px;
-    top: 40%;
+    width: 70%;
+  }
+
+  body >  section:nth-of-type(2) h2, .hero-banner h2, h2{
+    font-size: 4.8rem;
+    line-height: calc(48 / 48);
+  }
+
+  body >  section:nth-of-type(2) p{
+    font-size: 3.2rem;
+    line-height: calc(48 / 32);
   }
 
   /* hero-banner */
@@ -368,7 +376,22 @@ footer p{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
-  }
+    transition: all ease 2s;
+    -webkit-transition: all ease 2s;
+    -moz-transition: all ease 2s;
+    -ms-transition: all ease 2s;
+    -o-transition: all ease 2s;
+}
+
+/* web dev page */
+.web-dev-album ul.flex-container{
+  align-self: stretch;
+}
+
+.web-dev-album li{
+  width: calc(100% / 3 - 2.4rem);
+}
+
 }
 
 @media screen and (min-width: 1110px) {
