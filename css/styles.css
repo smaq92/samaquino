@@ -171,7 +171,7 @@ ul.menu li{
   display: inline-block;
   margin: 2.4rem 0 0 0;
   padding: 1.2rem 2.4rem;
-  background-color: #E2706D;
+  background-color: #943b38;
   border-radius: 4.8rem;
 }
 
@@ -179,10 +179,16 @@ ul.menu li{
   color: white;
 }
 
-header nav a:hover, header nav a:active, .portfolio-list a:hover, .portfolio-list a:active{
+.hero-banner a:hover{
+  color: #943b38;
+  background-color: white;
+  font-weight: 700;
+}
+
+header nav a:hover, header nav a:active, .portfolio-list a:hover, .portfolio-list a:active, .portfolio-items a:hover{
   text-transform: uppercase;
   font-weight: bold;
-  color: #E2706D;
+  color: #943b38;
 }
 
 /* ***ABOUT ME** */
@@ -276,6 +282,7 @@ body> section:nth-of-type(3) a{
 .web-dev-album li{
   margin: 0 0 3rem 0
 }
+
 
 /* Contact Page/footer */
 footer{
@@ -380,7 +387,7 @@ footer p{
 
   }
 
-  .portfolio-album{
+  .portfolio-album, .web-design-album{
     display: flex;
     flex-flow: row wrap;
     justify-content: center;
@@ -389,6 +396,24 @@ footer p{
     -moz-transition: all ease 2s;
     -ms-transition: all ease 2s;
     -o-transition: all ease 2s;
+}
+
+.web-design-album{
+  justify-content: space-between;
+}
+
+.web-design-album div{
+  width: calc(100% / 2 - 2.4rem);
+  height: 450px;
+  overflow: hidden;
+}
+
+.web-design-album p{
+  font-size: 1rem;
+  line-height: calc(24 / 10);
+  text-align: center;
+  min-height: 48px;
+  padding: 1.2rem;
 }
 
 .portfolio-list ul{
